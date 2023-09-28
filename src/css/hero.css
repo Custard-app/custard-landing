@@ -1,0 +1,56 @@
+:root{
+    --blue: #FF7E27;
+    --black: #354046;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    transition: all .2s linear;
+    text-transform: capitalize;
+
+}
+*::selection{
+    background: var(--black);
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background: #CBCBCB;
+
+
+}
+.home .content h1{
+    font-size: 5rem;
+    color: var(--black);
+    margin: 1rem .5rem;
+}
+.home .content h1 span{
+    color: var(--blue);
+}
+.home .content p{
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem .5rem;
+}
+.star{
+    margin-top: 20px;
+}
+@media (max-width:768px){
+    html{
+        font-size: 55%;
+
+    }
+    .home{
+        margin: 0 10px;
+    }
+    .home .content h1{
+        margin: 1rem .5rem;
+    }
+    .home .content p{
+        margin: 1rem .5rem;
+    }
+
+}

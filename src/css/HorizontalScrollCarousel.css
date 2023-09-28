@@ -1,0 +1,15 @@
+.setter{
+    display:flex;
+    flex-direction: row;
+    /* overflow-y: hidden; */
+}
+.set1{
+    display: flex;
+    background-color: black;
+}
+
+.set2{
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
