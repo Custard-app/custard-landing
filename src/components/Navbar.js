@@ -6,7 +6,7 @@ const Navbar = () => {
     <header>
       <div className="container">
         <a href="#" className="nav-logo">
-          <span>CUS</span>TARD
+          CUSTARD
         </a>
         <nav className="nav">
           <ul>
@@ -24,7 +24,7 @@ const Navbar = () => {
             </li>
 
             <li className="list">
-              <button className="waitlist">Join The WaitList</button>
+              <button className="test-btn">Join The WaitList</button>
             </li>
           </ul>
         </nav>

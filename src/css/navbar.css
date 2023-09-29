@@ -15,13 +15,6 @@
     background: var(--black);
     color: #fff;
 }
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    background: #CBCBCB;
-
-
-}
 .waitlist{
     padding: 8px;
     font-weight: bold;
@@ -34,11 +27,7 @@ html{
 }
   
 body{
-    overflow-x: hidden;
     height: 150rem;
-}
-section{
-    overflow: hidden;
 }
 .test-btn{
     height: 3.5rem;
