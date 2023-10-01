@@ -144,6 +144,7 @@ const Texthead = styled.div`
   font-size:5em;
   color:#ff7e27;
   font-weight: 500;
+  margin:2rem;
 `;
 
 const AppContainer = styled.div`

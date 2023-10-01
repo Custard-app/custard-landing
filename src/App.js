@@ -4,8 +4,8 @@ import Hero from "./components/Hero";
 import HorizontalScrollCarousel from "./components/HorizontalScrollCarousel";
 import Foot from "./components/Foot";
 import About from "./components/About";
+import Blog from "./components/Blog";
 import FormAnimation from "./components/FormAnimation";
-import { useEffect } from "react";
 
 function App() {
 
@@ -15,8 +15,9 @@ function App() {
       <Hero />
       <HorizontalScrollCarousel />
       <FormAnimation />
-      <Foot />
       <About />
+      <Blog />
+      <Foot /> 
     </>
   );
 }

@@ -1,87 +1,36 @@
 import React from 'react'
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBCol,
-  MDBRow,
-} from 'mdb-react-ui-kit';
 import "../css/Foot.css";
-
 const Foot = () => {
   return (
-<MDBFooter bgColor='primary' className='text-white text-center text-lg-left'>
-      <MDBContainer className='p-4'>
-        <MDBRow>
-          <MDBCol lg='6' md='12' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase'>Footer Content</h5>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias.
-              Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est
-              atque cumque eum delectus sint!
-            </p>
-          </MDBCol> 
-
-          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase'>Links</h5>
-
-            <ul className='list-unstyled mb-0'>
-              <li>
-                <a href='#!' className='text-white '>
-                  Link 1
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-white'>
-                  Link 2
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-white'>
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-white'>
-                  Link 4
-                </a>
-              </li>
+    <footer class="footer-07">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-12 text-center">
+						<h2 class="footer-heading"><a href="#" class="logo">CUSTARD</a></h2>
+						<p class="menu">
+							<a href="#">Home</a>
+							<a href="#">Agent</a>
+							<a href="#">About</a>
+							<a href="#">Listing</a>
+							<a href="#">Blog</a>
+							<a href="#">Contact</a>
+						</p>
+						<ul class="ftco-footer-social p-0">
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
             </ul>
-          </MDBCol>
-
-          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase mb-0'>Links</h5>
-
-            <ul className='list-unstyled'>
-              <li>
-                <a href='#!' className='text-white'>
-                  Link 1
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-white'>
-                  Link 2
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-white'>
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a href='#!' className='text-white'>
-                  Link 4
-                </a>
-              </li>
-            </ul>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        CUSTARD GROW YOUR COMMUNITY FULL TIME
-      </div>
-    </MDBFooter>
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="col-md-12 text-center">
+						<p class="copyright">
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+					  </p>
+					</div>
+				</div>
+			</div>
+		</footer>
   );
 }
 

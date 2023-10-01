@@ -3,7 +3,28 @@
     position:-webkit-sticky;
 }
 
+.set1::before,
+.set1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 7;
+  width: 20px; /* Adjust the width of the blurred area */
+  height: 100%; /* Make sure it covers the entire height */
+  background: inherit; /* Inherit background from the parent container */
+  filter: blur(10px); /* Adjust the blur radius */
+  z-index: 1; /* Place the overlay elements above the content */
+}
 
+/* Style for the left blurred overlay element */
+.set1::before {
+    left: 0;
+  }
+  
+  /* Style for the right blurred overlay element */
+  .set1::after {
+    right: 0;
+  }
 
 .setter{
     display:flex;
@@ -13,8 +34,8 @@
     justify-content: space-evenly;
     margin-left: 40em;
     background-color: transparent;
+    
 
-    /* overflow-y: hidden; */
 }
 .set1{
     display: flex;
