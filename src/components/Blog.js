@@ -3,7 +3,7 @@ import "../css/Blog.css";
 import d1 from "../assets/doodle1.png";
 
 const Blog = () => {
-    return (
+    return (<section>
         <div className="blog-space">
             <a href="">
                 <div className='container-blog'>
@@ -16,6 +16,7 @@ const Blog = () => {
                 </div>
             </a>
         </div>
+    </section>
     )
 }
 

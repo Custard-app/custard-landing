@@ -3,8 +3,9 @@ import "../css/navbar.css";
 
 const Navbar = () => {
   return (
+    <section className="nav-head">
     <header>
-      <div className="container">
+      <div className="container ">
         <a href="#" className="nav-logo">
           CUSTARD
         </a>
@@ -32,6 +33,7 @@ const Navbar = () => {
         <div className="fas fa-bars "></div>
       </div>
     </header>
+    </section>
   );
 };
 

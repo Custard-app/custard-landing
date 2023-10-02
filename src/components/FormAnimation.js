@@ -4,18 +4,31 @@ import "../css/form.css";
 
 const FormAnimation = () => {
   const row1 = [
-    "       CUSTARD : GROW YOUR COMMUNITY .    ",
+    ".  CUSTARD : GROW YOUR COMMUNITY   .",
+    ".  CUSTARD : GROW YOUR COMMUNITY   .",
   ];
 
   const row2 = [
-    "       CUSTARD : GROW YOUR COMMUNITY .   ",
+    ".  CUSTARD : GROW YOUR COMMUNITY   .",
+    ".  CUSTARD : GROW YOUR COMMUNITY   .",
   ];
 
   return (
+    <section>
     <AppContainer className='AppContainer'>
       <Wrapper>
         <Texthead>A PLATFORM THAT ADAPTS TO YOU</Texthead>
         <Marquee>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <Text1>{el}</Text1>
+            ))}
+          </MarqueeGroup>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <Text1><Dark>{el}</Dark></Text1>
+            ))}
+          </MarqueeGroup>
           <MarqueeGroup>
             {row1.map((el) => (
               <Text1>{el}</Text1>
@@ -38,8 +51,28 @@ const FormAnimation = () => {
               <Text2><Dark>{el}</Dark></Text2>
             ))}
           </MarqueeGroup2>
+          <MarqueeGroup2>
+            {row2.map((el) => (
+              <Text2>{el}</Text2>
+            ))}
+          </MarqueeGroup2>
+          <MarqueeGroup2>
+            {row2.map((el) => (
+              <Text2><Dark>{el}</Dark></Text2>
+            ))}
+          </MarqueeGroup2>
         </Marquee>
         <Marquee>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <Text3>{el}</Text3>
+            ))}
+          </MarqueeGroup>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <Text3><Dark>{el}</Dark></Text3>
+            ))}
+          </MarqueeGroup>
           <MarqueeGroup>
             {row1.map((el) => (
               <Text3>{el}</Text3>
@@ -62,8 +95,28 @@ const FormAnimation = () => {
               <Text4><Dark>{el}</Dark></Text4>
             ))}
           </MarqueeGroup2>
+          <MarqueeGroup2>
+            {row2.map((el) => (
+              <Text4>{el}</Text4>
+            ))}
+          </MarqueeGroup2>
+          <MarqueeGroup2>
+            {row2.map((el) => (
+              <Text4><Dark>{el}</Dark></Text4>
+            ))}
+          </MarqueeGroup2>
         </Marquee>
         <Marquee>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <Text5>{el}</Text5>
+            ))}
+          </MarqueeGroup>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <Text5><Dark>{el}</Dark></Text5>
+            ))}
+          </MarqueeGroup>
           <MarqueeGroup>
             {row1.map((el) => (
               <Text5>{el}</Text5>
@@ -86,6 +139,38 @@ const FormAnimation = () => {
               <Text6><Dark>{el}</Dark></Text6>
             ))}
           </MarqueeGroup2>
+          <MarqueeGroup2>
+            {row2.map((el) => (
+              <Text6>{el}</Text6>
+            ))}
+          </MarqueeGroup2>
+          <MarqueeGroup2>
+            {row2.map((el) => (
+              <Text6><Dark>{el}</Dark></Text6>
+            ))}
+          </MarqueeGroup2>
+        </Marquee>
+        <Marquee>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <Text7>{el}</Text7>
+            ))}
+          </MarqueeGroup>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <Text7><Dark>{el}</Dark></Text7>
+            ))}
+          </MarqueeGroup>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <Text7>{el}</Text7>
+            ))}
+          </MarqueeGroup>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <Text7><Dark>{el}</Dark></Text7>
+            ))}
+          </MarqueeGroup>
         </Marquee>
         <Box>
           <div className="form-container">
@@ -129,6 +214,7 @@ const FormAnimation = () => {
         </Box>
       </Wrapper>
     </AppContainer>
+    </section>
   );
 }
 
@@ -144,11 +230,11 @@ const Texthead = styled.div`
   font-size:5em;
   color:#ff7e27;
   font-weight: 500;
-  margin:2rem;
+
 `;
 
 const AppContainer = styled.div`
-  width: 98.9vw;
+  width: 100%;
   height: 100vh;
   color: #000000;
   position: relative;
@@ -172,7 +258,7 @@ const Wrapper = styled.div`
 const Text = css`
   display:flex;
   justify-content:space-evenly;
-  font-size: 100px;
+  font-size: 7rem;
   font-weight: 500;
   margin:-25px 0 -25px 0;
 `;
@@ -206,8 +292,13 @@ const Text5 = styled.div`
     color:#F2F2F2 ;
     opacity:0.85;
 `;
-
 const Text6 = styled.div`
+    ${Text}
+    color:#F2F2F2 ;
+    opacity:0.95;
+`;
+
+const Text7 = styled.div`
     ${Text}
     color:#F2F2F2;
     opacity:1;

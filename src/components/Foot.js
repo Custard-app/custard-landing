@@ -2,6 +2,7 @@ import React from 'react'
 import "../css/Foot.css";
 const Foot = () => {
   return (
+	<section>
     <footer class="footer-07">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -31,6 +32,7 @@ const Foot = () => {
 				</div>
 			</div>
 		</footer>
+		</section>
   );
 }
 

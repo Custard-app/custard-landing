@@ -4,7 +4,7 @@ import "../css/About.css";
 
 const Contain = () => {
   return (
-    <>
+    <section>
       <h1 className='heading'>ABOUT</h1>
       <div class="about">
         <div className="imag">
@@ -26,7 +26,7 @@ const Contain = () => {
           <img src={front} alt="" />
         </div>
       </div>
-    </>
+    </section>
   )
 }
 
