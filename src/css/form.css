@@ -10,6 +10,17 @@
 
 .AppContainer{
   max-height: 100vh;
+  
+}
+input {
+  outline: hidden;
+  border-width: 0 0 2px;
+
+  border-color: var(--black)
+}
+input:focus {
+  border-color: var(--org);
+  outline: 1px none #000
 }
 
 .form-container{
@@ -18,7 +29,8 @@ min-height: 50vh;
 border-radius: 20px;
 display: flex;
 justify-content: center;
-background-image: url(https://media.istockphoto.com/id/135887442/photo/white-tissue-paper-background-with-geometric-design.webp?b=1&s=170667a&w=0&k=20&c=hbW4kQw0YDlK5wWG5_UvHYVaLuz0ZXZZdUhh5QHUmWo=);
+background: #fff;
+/* background-image: url(https://media.istockphoto.com/id/135887442/photo/white-tissue-paper-background-with-geometric-design.webp?b=1&s=170667a&w=0&k=20&c=hbW4kQw0YDlK5wWG5_UvHYVaLuz0ZXZZdUhh5QHUmWo=); */
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 align-items: center;
 }
@@ -31,7 +43,7 @@ align-items: center;
 flex-direction: column;
 border-radius: 20px 0 0 20px;
 
-background: var(--black);
+background: #000;
 height: 66vh;
 }
 .form-container-1 h1{
@@ -42,9 +54,12 @@ font-size: 1rem;
 color:#F2F2F2;
 opacity: 0.6;
 }
+.name-span{
+  display: block;
+}
 .form-container-2{
 width: 60%;
-min-height: 40vh;
+height: 66vh;
 border-radius: 0 20px 20px 0;
 font-size: 2rem;
 
@@ -115,7 +130,9 @@ font-size: 2rem;
 .signin a:hover {
   text-decoration: underline royalblue;
 }
-
+.super-text{
+  display: none;
+}
 .flex {
   display: flex;
   width: 100%;
@@ -123,20 +140,20 @@ font-size: 2rem;
   background-color: transparent;
 }
 
-.form label {
-  position: relative;
+.form label span{
+  font-size: 1.5rem;
 }
 
-.form label .input {
+/* .form label .input {
   width: 100%;
   padding: 10px 10px 20px 10px;
   outline: 0;
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
-  /* margin-top: 20px; */
-}
+  margin-top: 20px;
+}  */
 
-.form label .input + span {
+/* .form label .input + span {
   position: absolute;
   left: 10px;
   top: 15px;
@@ -144,14 +161,14 @@ font-size: 2rem;
   font-size: 0.9em;
   cursor: text;
   transition: 0.3s ease;
-}
+} */
 
-.form label .input:placeholder-shown + span {
+/* .form label .input:placeholder-shown + span {
   top: 15px;
   font-size: 0.9em;
-}
+} */
 
-.form label .input:focus + span,.form label .input:valid + span {
+/* .form label .input:focus + span,.form label .input:valid + span {
   top: 0px;
   font-size: 0.7em;
   font-weight: 600;
@@ -159,7 +176,7 @@ font-size: 2rem;
 
 .form label .input:valid + span {
   color: var(--org);
-}
+} */
 .form-text{
   font-size: 100px;
 }
@@ -202,6 +219,23 @@ font-size: 2rem;
   width: 60vw;
   min-height: 20vh;
   border-radius: 20px;
-}
-}
 
+}
+.super-text{
+  background: #000;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 20px 20px 0 0;
+}
+.form-container-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}

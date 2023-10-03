@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes, css } from "styled-components";
 import "../css/form.css";
+import "../css/FormAnimation.css";
 
 const FormAnimation = () => {
   const row1 = [
@@ -16,9 +17,9 @@ const FormAnimation = () => {
   return (
     <section>
     <AppContainer className='AppContainer'>
-      <Wrapper>
-        <Texthead>A PLATFORM THAT ADAPTS TO YOU</Texthead>
-        <Marquee>
+      <Wrapper className='wrapper'>
+        <Texthead className='texthead'>A PLATFORM THAT ADAPTS TO YOU</Texthead>
+        <Marquee className='marqueetext'>
           <MarqueeGroup>
             {row1.map((el) => (
               <Text1>{el}</Text1>
@@ -40,7 +41,7 @@ const FormAnimation = () => {
             ))}
           </MarqueeGroup>
         </Marquee>
-        <Marquee>
+        <Marquee className='marqueetext'>
           <MarqueeGroup2>
             {row2.map((el) => (
               <Text2>{el}</Text2>
@@ -62,7 +63,7 @@ const FormAnimation = () => {
             ))}
           </MarqueeGroup2>
         </Marquee>
-        <Marquee>
+        <Marquee className='marqueetext'>
           <MarqueeGroup>
             {row1.map((el) => (
               <Text3>{el}</Text3>
@@ -84,7 +85,7 @@ const FormAnimation = () => {
             ))}
           </MarqueeGroup>
         </Marquee>
-        <Marquee>
+        <Marquee className='marqueetext'>
           <MarqueeGroup2>
             {row2.map((el) => (
               <Text4>{el}</Text4>
@@ -106,7 +107,7 @@ const FormAnimation = () => {
             ))}
           </MarqueeGroup2>
         </Marquee>
-        <Marquee>
+        <Marquee className='marqueetext'>
           <MarqueeGroup>
             {row1.map((el) => (
               <Text5>{el}</Text5>
@@ -128,7 +129,7 @@ const FormAnimation = () => {
             ))}
           </MarqueeGroup>
         </Marquee>
-        <Marquee>
+        <Marquee className='marqueetext'>
           <MarqueeGroup2>
             {row2.map((el) => (
               <Text6>{el}</Text6>
@@ -150,7 +151,7 @@ const FormAnimation = () => {
             ))}
           </MarqueeGroup2>
         </Marquee>
-        <Marquee>
+        <Marquee className='marqueetext'>
           <MarqueeGroup>
             {row1.map((el) => (
               <Text7>{el}</Text7>
@@ -173,40 +174,70 @@ const FormAnimation = () => {
           </MarqueeGroup>
         </Marquee>
         <Box>
-          <div className="form-container">
+        <div className="form-container">
             <div className="form-container-1">
               <h1 className="form-text">JOIN THE WAITLIST</h1>
               <p>Custard will get back to you soon.</p>
             </div>
+            <div className='super-text'>
+              <h1>Join The Waitlist</h1>
+            
+            </div>
             <div className="form-container-2">
               <form className="form">
+               
                 <div className="flex">
                   <label>
+                    <span className='name-span'>Name</span>
                     <input
                       className="input"
                       type="text"
                       placeholder=""
-                      size="56"
                       required=""
                     />
-                    <span>Name</span>
+                  </label>
+                </div>
+                <div className="flex">
+                  <label>
+                    <span>Community Name</span>
+                    <input
+                      className="input"
+                      type="text"
+                      placeholder=""
+                      required=""
+                    />
+                  </label>
+                </div>
+                <div className="flex">
+                  <label>
+                    <span>About Community</span>
+                    <input
+                      className="input"
+                      type="text"
+                      placeholder=""
+                      required=""
+                    />
+                  </label>
+                </div>
+                <div className="flex">
+                  <label>
+                    <span>PhoneNumber</span>
+                    <input
+                      className="input"
+                      type="tel"
+                      placeholder=""
+                      required=""
+                    />
                   </label>
                 </div>
 
-                <label>
-                  <input
-                    className="input"
-                    type="email"
-                    placeholder=""
-                    required=""
-                  />
-                  <span>Email</span>
-                </label>
+               
+                
                 <button
                   className="submit
               "
                 >
-                  Submit
+                  Verify
                 </button>
               </form>
             </div>
@@ -237,7 +268,6 @@ const AppContainer = styled.div`
   width: 100%;
   height: 100vh;
   color: #000000;
-  position: relative;
   display: flex;
   background: #393939;
   overflow-x:hidden;
@@ -248,7 +278,6 @@ const AppContainer = styled.div`
 
 const Wrapper = styled.div`
   width: 100%;
-  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -338,7 +367,7 @@ const common = css`
   align-items: center;
   justify-content: space-around;
   white-space: nowrap;
-  animation: ${scrollX} 30s linear infinite;
+  animation: ${scrollX} 100s linear infinite;
 `;
 
 const MarqueeGroup = styled.div`
