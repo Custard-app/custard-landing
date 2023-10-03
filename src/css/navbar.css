@@ -122,7 +122,7 @@ header .fa-bars{
 header .fa-times{
     transform: rotate(180deg);
 }
-@media (max-width:768px){
+@media (max-width:968px){
     html{
         font-size: 55%;
 

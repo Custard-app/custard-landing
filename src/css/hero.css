@@ -112,7 +112,7 @@ path {
   }
 
 .svgPath2{
-    width: 50rem;
+    width: 40rem;
     height: 4.6rem;
 }
 /* .hero-h1::after{
@@ -151,7 +151,7 @@ path {
 
     }
     .home{
-        margin: 0;
+        margin: 2rem;
     }
     .hero-h1{
         font-size: 5rem;
