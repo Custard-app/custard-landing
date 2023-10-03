@@ -76,7 +76,6 @@ section {
     position: relative;
     max-height: 90vh;
     margin: 20px;
-    overflow: hidden;
 }
 
 .scrollContent{
@@ -98,5 +97,14 @@ section {
     .scrollSection{
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+    .scrollSection>div{
+        width: 90%;
+        height: 30%;
+    }
+    
+    .scrollimg{
+        border-radius: 20px;
     }
 }

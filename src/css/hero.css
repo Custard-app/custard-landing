@@ -8,12 +8,13 @@
     box-sizing: border-box;
     text-decoration: none !important;
     transition: all .2s linear;
-    text-transform: capitalize;
 
 }
-/* .home{
-    height: 90vh;
-} */
+
+.home{
+    margin: 0 3rem 0 3rem;
+
+}
 
 *::selection{
     background: var(--black);
@@ -22,15 +23,15 @@
 html{
     font-size: 80.5%;
 }
+
+
 .home .content h1{
-    font-size: 5rem;
-    color: var(--black);
     margin: 1rem .5rem;
 }
-/* .home .content h1 span{
+.home .content h1 span{
     color: var(--blue);
     margin-right: 1rem;
-} */
+}
 /* .home .content p{
     font-size: 2rem;
     color: var(--black);
@@ -39,7 +40,7 @@ html{
 
 
 .mage{
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -48,9 +49,10 @@ html{
     border-radius: 50px;
 }
 
-.test{
-    font-size: 300;
+.hero-h1{
+    font-size: 8rem;
     font-weight: bolder;
+    line-height: 7.5rem;
 }
 
 .home .content a{
@@ -68,26 +70,64 @@ html{
 
 .hero-btn{
     background-color: #FF7E27;
-    padding: 1.5rem;
+    padding: 1rem;
     width: 15rem;
     border-radius: 40px;
     font-size: 1.5rem;
-    font-weight: 1000;
+    font-weight: 500;
+    margin-top: 5rem;
 }
 
 .hero-btn:hover{
     background-color: #fff;
-    color: #FF7E27;
-    border: #FF7E27 3px solid;
+    color: #f5225f;
+    border: #f5225f 3px solid;
 }
 
 
 .extra-content{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
-    margin: 6rem;
+    margin:  0 6rem 6rem; 
+    height: 79vh;
+    align-items: flex-start;
+    padding-top: 2rem;
 }
+
+path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 2s ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 580;
+    }
+  }
+
+.svgPath2{
+    width: 50rem;
+    height: 4rem;
+    animation: dash 2s ease-in;
+    animation-delay: 5s;
+}
+/* .hero-h1::after{
+    content: "";
+    width: 20%;
+    height: 35px;
+    background-image: url("../assets/needle-underline.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+} */
 
 .etitle{
     font-size: 3rem;
@@ -96,7 +136,7 @@ html{
 }
 
 .econtent{
-    margin: 2.5rem 0 0 0;
+    margin: 4rem 0 0 0;
     font-size: 1.5rem;
     width: 70%;
 }
@@ -114,13 +154,32 @@ html{
 
     }
     .home{
-        margin: 0 10px;
+        margin: 0;
     }
-    .home .content h1{
-        margin: 1rem .5rem;
+    .hero-h1{
+        font-size: 5rem;
     }
-    .home .content p{
-        margin: 1rem .5rem;
+    .hero-btn{
+        margin: 0rem;
     }
-
+    .mage{
+        width: 90%;
+        margin: 3rem;
+    }
+    .mage img{
+        border-radius: 12px;
+    }
+    .extra-content{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+    .etitle{
+        font-size: 2rem;
+    }
+    .econtent{
+        font-size: 1.5rem;
+    }
 }

@@ -15,9 +15,9 @@ function App() {
       <Hero />
       <HorizontalScrollCarousel />
       <FormAnimation />
-      <About />
+      {/* <About />
       <Blog />
-      <Foot /> 
+      <Foot />  */}
     </>
   );
 }

@@ -21,7 +21,7 @@ function Image({ id }) {
   return (
     <section className="scrollSection">
       <div ref={ref}>
-        <img className="scrollimg" width="100%" src={`/assets/${id.img}.png`} alt="A London skyscraper" />
+        <img className="scrollimg" width="100%" src={`/assets/${id.img}.png`} alt="" />
       </div>
       <div className="scrollContent">
         <h2 className="h2scroll" >{`${id.heading}`}</h2>
