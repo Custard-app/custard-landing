@@ -11,8 +11,13 @@
     display: flex;
     flex-direction: row;
 }
+
 .imag{
     min-width: 50%;
+}
+
+.content p{
+    font-size: 1.4rem;
 }
 
 .about2{

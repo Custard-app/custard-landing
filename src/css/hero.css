@@ -1,5 +1,5 @@
 :root{
-    --blue: #FF7E27;
+    --blue: #f5225f;
     --black: #354046;
 }
 *{
@@ -29,7 +29,7 @@ html{
     margin: 1rem .5rem;
 }
 .home .content h1 span{
-    color: var(--blue);
+    color: #f5225f;
     margin-right: 1rem;
 }
 /* .home .content p{
@@ -55,9 +55,6 @@ html{
     line-height: 7.5rem;
 }
 
-.home .content a{
-    margin:0rem 7.5rem;
-}
 .star{
     margin-top: 20px;
     display: flex;
@@ -69,7 +66,8 @@ html{
 }
 
 .hero-btn{
-    background-color: #FF7E27;
+    background-color: #f5225f;
+    color: #ffffff;
     padding: 1rem;
     width: 15rem;
     border-radius: 40px;
@@ -80,8 +78,8 @@ html{
 
 .hero-btn:hover{
     background-color: #fff;
-    color: #f5225f;
-    border: #f5225f 3px solid;
+    color: #318FFF;
+    border: #318FFF 3px solid;
 }
 
 
@@ -150,18 +148,18 @@ path {
         font-size: 55%;
 
     }
-    .home{
-        margin: 2rem;
-    }
     .hero-h1{
         font-size: 5rem;
     }
     .hero-btn{
         margin: 0rem;
     }
+    .content{
+        margin-top: -3rem;
+    }
     .mage{
         width: 90%;
-        margin: 3rem;
+        margin: 3rem 3rem 0 3rem;
     }
     .mage img{
         border-radius: 12px;
@@ -170,7 +168,7 @@ path {
         display: flex;
         text-align: center;
         align-items: center;
-        margin: 0;
+        margin: -8rem;
         margin-bottom: 3rem;
     }
     .etitle{

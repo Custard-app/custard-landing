@@ -19,15 +19,17 @@ function Image({ id }) {
   const y = useParallax(scrollYProgress, 300);
 
   return (
+    <>
     <section className="scrollSection">
-      <div ref={ref}>
+      <div ref={ref} className="stick-image">
         <img className="scrollimg" width="100%" src={`/assets/${id.img}.png`} alt="" />
       </div>
-      <div className="scrollContent">
+      <div className="scrollContent animate__animated animate__fadeInUp animate__delay-2s">
         <h2 className="h2scroll" >{`${id.heading}`}</h2>
         <h1 className="h1scroll" >{`${id.content}`}</h1>
       </div>
     </section>
+    </>
   );
 }
 
@@ -54,27 +56,52 @@ const cards = [
   {
     img: "doodle 2",
     heading: "Communities saved your Great⁹⁹ grandpa. (and you)",
-    content: "Until 40,000 years ago, Neanderthals set out to find all the Sapiens and were ready to get rid of all of them. Spears ready, they marched shouting unintelligible words. Sapiens decided to form communities and band together to form a plan. Pushed all the Neanderthals in a valley and blocked both the ends. Won the war. Thanks to which you are reading this on your marvelous digital device.",
+    content: "Until 40,000 years ago, Neanderthals set out to find all the Sapiens and were ready to get rid of all of them. Spears ready, they marched shouting unintelligible words.",
+  },
+  {
+    img: "doodle 2",
+    heading: "Continue",
+    content: " Sapiens decided to form communities and band together to form a plan. Pushed all the Neanderthals in a valley and blocked both the ends. Won the war. Thanks to which you are reading this on your marvelous digital device.",
   },
   {
     img: "doodle 3",
     heading: "Stories lead the way.",
-    content: "Your great⁹⁹ grandpa told the story of his fallen enemy's demise to his community. These stories became the force driving humans together and leading the way towards us right now. Every civilization was a band of communities living together. They became very big with time but the core idea of communities never changed. ( the sunglasses were a luxury back then)",
+    content: "Your great⁹⁹ grandpa told the story of his fallen enemy's demise to his community. These stories became the force driving humans together and leading the way towards us right now.",
+  },
+  {
+    img: "doodle 3",
+    heading: "Continue",
+    content: " Every civilization was a band of communities living together. They became very big with time but the core idea of communities never changed. ( the sunglasses were a luxury back then)",
   },
   {
     img: "doodle 4",
     heading: "The Social Dance Tribe",
-    content: "Shunyaum observed the power of communities and set out to create a latin dance family of his own. He had an expertise in the Latin Dance styles Bachata, Kizumba and Salsa. He brought them to his people in a studio in Jaipur, Rajasthan, India. People joined him in his crazy, wholesome adventure of creating a community.",
+    content: "Shunyaum observed the power of communities and set out to create a latin dance family of his own. He had an expertise in the Latin Dance styles Bachata, Kizumba and Salsa. ",
+  },
+  {
+    img: "doodle 4",
+    heading: "Continue",
+    content: "He brought them to his people in a studio in Jaipur, Rajasthan, India. People joined him in his crazy, wholesome adventure of creating a community.",
   },
   {
     img: "doodle 5",
     heading: "Custard meets The Social Dance Tribe",
-    content: "Shunyaum needed custard to simplify running the dance community and grow it further. The perfect feedback loop for him to get better at his work, easy membership renewals for members and personalized calendar of events and classes for everyone. \n Custard is exponentially more useful combining all the features a community creator or a member could need.",
+    content: "Shunyaum needed custard to simplify running the dance community and grow it further. The perfect feedback loop for him to get better at his work, easy membership renewals for members and personalized calendar of events and classes for everyone.",
+  },
+  {
+    img: "doodle 5",
+    heading: "Continue",
+    content: " Custard is exponentially more useful combining all the features a community creator or a member could need.",
   },
   {
     img: "doodle 6",
     heading: "\"Custard does it for me\" - Shunyaum",
-    content: "This is it. The epitome of Human social life. The connection we live for. This support of \"one more human being\" selfless and unconditional, is what community is all about. Shunyaum enjoys his community socials without being worried about keeping the environment gated, and inclusive simultaneously.",
+    content: "This is it. The epitome of Human social life. The connection we live for. This support of \"one more human being\" selfless and unconditional, is what community is all about. ",
+  },
+  {
+    img: "doodle 6",
+    heading: "Let's Grow Together \" - Shunyaum",
+    content: "Shunyaum enjoys his community socials without being worried about keeping the environment gated, and inclusive simultaneously.",
   },
 ]
 
