@@ -12,7 +12,7 @@ const Hero = () => {
               <h1 className="hero-h1" >Grow your <span >community</span><div className="underline"> full time</div></h1>
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 823 83" xmlSpace="preserve"> <path class="svgPath" fill="none" stroke="rgba(255, 206, 89, 1)" stroke-width="16" d="M20.5,60.5c0,0,103-70,772-17"></path>  </svg>
               <a href="">
-              <button className="hero-btn" data-tf-popup="sRBt3843" data-tf-opacity="100" data-tf-size="70" data-tf-iframe-props="title=Join the waitlist to use the community management platform" data-tf-transitive-search-params data-tf-medium="snippet" >Join the Waitlist</button>
+              <button className="hero-btn" data-tf-popup="sRBt3843" data-tf-opacity="100" data-tf-size="70" data-tf-iframe-props="title=Waitlist form" data-tf-transitive-search-params data-tf-medium="snippet">Join the Waitlist</button>
               </a>
             </div>
             <div className="col-md-6 pr-md-5 mage">

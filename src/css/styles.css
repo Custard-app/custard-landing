@@ -40,10 +40,12 @@ html {
 
 
 .h2scroll {
+    display: flex;
     margin: 0;
     color: var(--accent);
     font-size: 2.2rem;
     font-weight: 700;
+    justify-content: center;
 }
 
 .h1scroll{
@@ -52,6 +54,7 @@ html {
     font-size: 2rem;
     font-weight: 200;
     position: absolute;
+    align-items: center;
 }
 
 .scrollSection {

@@ -21,10 +21,10 @@ function Image({ id }) {
   return (
     <>
     <section className="scrollSection">
-      <div ref={ref} className="stick-image">
+      <div ref={ref} className="stick-image animate__animated animate__fadeInRight">
         <img className="scrollimg" width="100%" src={`/assets/${id.img}.png`} alt="" />
       </div>
-      <div className="scrollContent animate__animated animate__fadeInUp animate__delay-2s">
+      <div className="scrollContent animate__animated ">
         <h2 className="h2scroll" >{`${id.heading}`}</h2>
         <h1 className="h1scroll" >{`${id.content}`}</h1>
       </div>
@@ -52,7 +52,30 @@ function HorizontalScrollCarousel() {
 
 export default HorizontalScrollCarousel
 
+function reveal() {
+  var reveals = document.querySelectorAll(".scrollContent");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("animate__fadeInUp");
+    } else {
+      reveals[i].classList.remove("animate__fadeInUp");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
 const cards = [
+  {
+    img: "",
+    heading: "Custard is the last thing your community needs. (join the waitlist if you get the joke) Here's a little story for you to check out and get some clarity into how custard+community exactly works.",
+    content: "",
+  },
   {
     img: "doodle 2",
     heading: "Communities saved your Great⁹⁹ grandpa. (and you)",
@@ -102,6 +125,11 @@ const cards = [
     img: "doodle 6",
     heading: "Let's Grow Together \" - Shunyaum",
     content: "Shunyaum enjoys his community socials without being worried about keeping the environment gated, and inclusive simultaneously.",
+  },
+  {
+    img: "doodle 6",
+    heading: "Conclusion",
+    content: "There are no protagonists in the community building space, but there surely are successful community builders. Build your community with custard.",
   },
 ]
 
