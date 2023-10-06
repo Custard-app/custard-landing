@@ -117,7 +117,6 @@ header .fa-bars{
    font-size: 3.2rem; 
    color: var(--blue);
    cursor: pointer;
-   z-index: 999999;
    display: none;
 }
 .address-custard{

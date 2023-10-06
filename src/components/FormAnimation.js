@@ -258,7 +258,7 @@ const Box = styled.div`
 `;
 
 const Texthead = styled.div`
-  font-size:5em;
+  font-size:5rem;
   color:#ff7e27;
   font-weight: 500;
 

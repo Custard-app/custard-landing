@@ -1,6 +1,10 @@
+.texthead{
+    margin: auto;
+    margin-bottom: 10rem;
+}
 @media(max-width:1081px){
-    .texthead{ 
-        display: none;
+    .texthead{
+        font-size: 2rem;
     }
     .marqueetext{
         display: flex;

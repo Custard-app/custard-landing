@@ -217,18 +217,20 @@ font-size: 2rem;
 .form-container-1{
   display: none;
   width: 60vw;
-  min-height: 20vh;
+  height: 20vh;
   border-radius: 20px;
 
 }
 .super-text{
   background: #f5225f;
   color: #fff;
+  position: relative;
+  top: -9.6rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50px;
+  height: 5rem;
   text-align: center;
   font-size: 2rem;
   border-radius: 20px 20px 0 0;
@@ -237,5 +239,6 @@ font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30vh;
 }
 }

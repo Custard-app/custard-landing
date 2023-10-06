@@ -160,3 +160,15 @@ footer {
 .ion-logo-facebook:before {
     content: "\f236";
 }
+@media (max-width:990px){
+    .logo{
+        display: flex;
+        position: relative;
+        transform: translateX(30%);
+        justify-content: center;
+    }
+    .footer-heading{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -41,11 +41,12 @@ html {
 
 .h2scroll {
     display: flex;
-    margin: 0;
+    margin: auto;
     color: var(--accent);
     font-size: 2.2rem;
     font-weight: 700;
     justify-content: center;
+    text-align: center;
 }
 
 .h1scroll{
@@ -55,6 +56,8 @@ html {
     font-weight: 200;
     position: absolute;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .scrollSection {
@@ -84,6 +87,7 @@ section {
 .scrollContent{
     height: 60%;
     width: 35%;
+    align-items: center;
 }
 
 .scrollimg {
@@ -94,6 +98,7 @@ section {
     bottom: 0;
     height: 100%;
     border-radius: 40px;
+    object-fit: contain;
 }
 
 .stick-img{
@@ -115,4 +120,6 @@ section {
     .scrollimg{
         border-radius: 20px;
     }
+    
 }
+

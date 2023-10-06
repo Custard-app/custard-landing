@@ -21,7 +21,7 @@ function Image({ id }) {
   return (
     <>
     <section className="scrollSection">
-      <div ref={ref} className="stick-image animate__animated animate__fadeInRight">
+      <div ref={ref} className="stick-image animate__animated ">
         <img className="scrollimg" width="100%" src={`/assets/${id.img}.png`} alt="" />
       </div>
       <div className="scrollContent animate__animated ">
@@ -67,8 +67,24 @@ function reveal() {
     }
   }
 }
+function revealimg() {
+  var reveals = document.querySelectorAll(".stick-image");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("animate__fadeInRight");
+    } else {
+      reveals[i].classList.remove("animate__fadeInRight");
+    }
+  }
+}
 
 window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", revealimg);
 
 const cards = [
   {
@@ -123,7 +139,7 @@ const cards = [
   },
   {
     img: "doodle 6",
-    heading: "Let's Grow Together \" - Shunyaum",
+    heading: "\"Let's Grow Together \" - Shunyaum",
     content: "Shunyaum enjoys his community socials without being worried about keeping the environment gated, and inclusive simultaneously.",
   },
   {
