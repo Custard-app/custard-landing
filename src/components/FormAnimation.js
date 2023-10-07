@@ -18,7 +18,7 @@ const FormAnimation = () => {
     <section>
     <AppContainer className='AppContainer'>
       <Wrapper className='wrapper'>
-        <Texthead className='texthead'>A PLATFORM THAT ADAPTS TO YOU</Texthead>
+        <div className='texthead'>A PLATFORM THAT ADAPTS TO YOU</div>
         <Marquee className='marqueetext'>
           <MarqueeGroup>
             {row1.map((el) => (
@@ -257,12 +257,6 @@ const Box = styled.div`
     justify-content:center;
 `;
 
-const Texthead = styled.div`
-  font-size:5rem;
-  color:#ff7e27;
-  font-weight: 500;
-
-`;
 
 const AppContainer = styled.div`
   width: 100%;
