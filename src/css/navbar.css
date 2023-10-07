@@ -140,7 +140,7 @@ header .fa-times{
         display: block;
         position: absolute;
         right: 3rem;
-        z-index: 10000;
+        z-index: 2;
         top: 2.4rem;
     }
     header .nav{
@@ -154,7 +154,7 @@ header .fa-times{
         /* border: .3rem solid var(--blue) !important; */
         background: #fff;
         width: 95%;
-        z-index: 999;
+        z-index: 1;
         opacity: 0;
 
     }
@@ -201,7 +201,7 @@ header .fa-times{
         display: block;
     }
 }
- @media screen and (max-width:913px) {
+ @media screen and (max-width:700px){
     html{
         font-size: 65%;
 
@@ -213,7 +213,7 @@ header .fa-times{
         display: block;
         position: absolute;
         right: 3rem;
-        z-index: 10000;
+        z-index: 2;
         top: 2.4rem;
     }
     header .nav{
@@ -227,7 +227,7 @@ header .fa-times{
         
         background: #fff;
         width: 95%;
-        z-index: 999;
+        z-index: 1;
         opacity: 0;
 
     }

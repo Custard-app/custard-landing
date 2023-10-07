@@ -12,7 +12,7 @@
 }
 
 .home{
-    margin: 0 3rem 0 3rem;
+    margin: 0 3rem 0 0;
 
 }
 
@@ -25,9 +25,6 @@ html{
 }
 
 
-.home .content h1{
-    margin: 1rem .5rem;
-}
 .home .content h1 span{
     color: #f5225f;
     margin-right: 1rem;

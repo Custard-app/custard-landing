@@ -2,16 +2,26 @@
     display: flex;
     justify-content: space-evenly;
     margin:0 2rem 0 2rem;
+    height: 90vh;
 }
 .lap-img{
     width: 50%;
     display: flex;
     justify-content: center;        
     margin: 1rem;
-    height: 8%;
 }
 .lap-img img{
     margin: auto;
+}
+
+.head-title{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.head-content{
+    font-size: 1.4rem;
+    line-height: 1.6;
 }
 
 .head{
@@ -21,6 +31,7 @@
     font-size: 4rem;
     text-align: center;
     margin-top: 2rem;
+    color: black;
     margin-bottom: -7rem;
 }
 
@@ -29,6 +40,10 @@
     margin: 150px auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap: 1rem;
 }
 .item{
     display: grid;
@@ -39,11 +54,6 @@
     cursor: pointer;
     border-radius: 5px;
 
-
-}
-h2{
-    font-size: 24px;
-    text-transform: capitalize;
 
 }
 .number{
@@ -87,14 +97,14 @@ h2{
     }
     .faq{
         margin: 0;
-        margin-left: -10rem;
+        height: auto;
     }
     h2{
         font-size: 15px;
         width: 25rem;
     }
     .accordion{
-        margin: 10rem;
+        width: 38rem;
     }
     .item{
         gap: 1rem;

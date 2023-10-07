@@ -66,7 +66,7 @@ function reveal() {
     var elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("animate__fadeInUp");
+      reveals[i].classList.add("animate__fadeIn");
     }
   }
 }
@@ -79,7 +79,7 @@ function revealimg() {
     var elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("animate__fadeInRight");
+      reveals[i].classList.add("animate__fadeIn");
     }
   }
 }
