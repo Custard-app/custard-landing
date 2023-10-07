@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     margin:0 2rem 0 2rem;
+    height: 90vh;
 }
 .lap-img{
     width: 50%;
@@ -29,6 +30,9 @@
     margin: 150px auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 .item{
     display: grid;
@@ -39,11 +43,6 @@
     cursor: pointer;
     border-radius: 5px;
 
-
-}
-h2{
-    font-size: 24px;
-    text-transform: capitalize;
 
 }
 .number{

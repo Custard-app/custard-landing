@@ -37,22 +37,22 @@ const Faq = () => {
       <div className="head">Frequently Asked Questions</div>
       <section className="faq">
         <Accordion
-          className="rounded-md overflow-hidden border accordion"
+          className="rounded-md overflow-hidden accordion"
           alwaysOpen={true}
         >
           {faqData.map((item, index) => (
             <AccordionItem key={index}>
               {({ open }) => (
                 <>
-                  <AccordionHeader
+                  <AccordionHeader 
                     className={generateHeaderClass(open, index + 1)}
                   >
-                    <span className="text-sm font-semibold text-gray-600">
+                    <span className=" fs-1 font-bold ">
                       {item.title}
                     </span>
 
                     <Chevron
-                      className={`w-6 h-6 text-gray-500 transition duration-300 ${
+                      className={`w-6 h-6 fs-3 transition duration-300 ${
                         open ? "rotate-90" : ""
                       }`}
                     />
