@@ -46,11 +46,13 @@ html{
 }
 
 .mage img{
+    object-fit: contain;
     border-radius: 50px;
 }
 
 .hero-h1{
-    font-size: 8rem;
+    font-size: 7rem;
+   
     font-weight: bolder;
     line-height: 7.5rem;
 }
@@ -71,6 +73,7 @@ html{
     padding: 1rem;
     width: 15rem;
     border-radius: 40px;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: 5rem;
@@ -163,6 +166,7 @@ path {
     }
     .mage img{
         border-radius: 12px;
+        object-fit: contain;
     }
     .extra-content{
         display: flex;
