@@ -9,8 +9,6 @@ import { faqData } from "./index_a";
 import { useCallback, useMemo } from "react";
 import "../css/faq.css";
 import d1 from "../assets/doodle1.png";
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Faq = () => {
   const faqDataSize = useMemo(() => {
@@ -48,7 +46,7 @@ const Faq = () => {
                   <AccordionHeader 
                     className={generateHeaderClass(open, index + 1)}
                   >
-                    <span className=" fs-1 font-bold ">
+                    <span className=" fs-1 font-bold head-title">
                       {item.title}
                     </span>
 
@@ -60,7 +58,7 @@ const Faq = () => {
                   </AccordionHeader>
 
                   <AccordionBody className={generateBodyClass(open, index + 1)}>
-                    <div className="p-4 fs-5 text-sm ">
+                    <div className="p-4 fs-5 text-sm head-content">
                       {item.content}
                     </div>
                   </AccordionBody>
