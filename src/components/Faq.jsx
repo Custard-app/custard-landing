@@ -9,6 +9,8 @@ import { faqData } from "./index_a";
 import { useCallback, useMemo } from "react";
 import "../css/faq.css";
 import d1 from "../assets/doodle1.png";
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Faq = () => {
   const faqDataSize = useMemo(() => {
@@ -20,7 +22,7 @@ const Faq = () => {
       const background = open ? "bg-gray-300/30" : "bg-white";
       const border =
         position === faqDataSize ? (open ? "border-b" : "") : "border-b";
-      return `transition-[background] flex items-center justify-between w-full px-4 py-3 ${border} ${background}`;
+      return `transition-[background] flex items-center justify-between w-full ${border} ${background}`;
     },
     [faqDataSize]
   );
@@ -38,7 +40,6 @@ const Faq = () => {
       <section className="faq">
         <Accordion
           className="rounded-md overflow-hidden accordion"
-          alwaysOpen={true}
         >
           {faqData.map((item, index) => (
             <AccordionItem key={index}>
@@ -59,7 +60,7 @@ const Faq = () => {
                   </AccordionHeader>
 
                   <AccordionBody className={generateBodyClass(open, index + 1)}>
-                    <div className="p-4 text-sm text-gray-500">
+                    <div className="p-4 fs-5 text-sm ">
                       {item.content}
                     </div>
                   </AccordionBody>

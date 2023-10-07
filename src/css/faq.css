@@ -22,6 +22,7 @@
     font-size: 4rem;
     text-align: center;
     margin-top: 2rem;
+    color: black;
     margin-bottom: -7rem;
 }
 
@@ -32,6 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: black;
     gap: 1rem;
 }
 .item{
@@ -86,14 +88,14 @@
     }
     .faq{
         margin: 0;
-        margin-left: -10rem;
+        height: auto;
     }
     h2{
         font-size: 15px;
         width: 25rem;
     }
     .accordion{
-        margin: 10rem;
+        width: 38rem;
     }
     .item{
         gap: 1rem;
