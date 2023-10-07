@@ -1,8 +1,8 @@
-.texthead{
-    margin: auto;
-    margin-bottom: 10rem;
-}
-@media(max-width:1081px){
+@media(max-width:1224px){
+    .texthead{
+        margin: auto;
+        margin-bottom: 10rem;
+    }
     .texthead{
         font-size: 2rem;
     }
