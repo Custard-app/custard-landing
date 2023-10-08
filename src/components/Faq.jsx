@@ -58,7 +58,7 @@ const Faq = () => {
                   </AccordionHeader>
 
                   <AccordionBody className={generateBodyClass(open, index + 1)}>
-                    <div className="p-4 fs-5 text-sm head-content">
+                    <div className="p-4 fs-5 head-content">
                       {item.content}
                     </div>
                   </AccordionBody>
