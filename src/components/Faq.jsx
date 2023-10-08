@@ -17,7 +17,7 @@ const Faq = () => {
 
   const generateHeaderClass = useCallback(
     (open, position) => {
-      const background = open ? "bg-gray-300/30" : "bg-white";
+      const background = open ? "bg-white" : "bg-white";
       const border =
         position === faqDataSize ? (open ? "border-b" : "") : "border-b";
       return `transition-[background] flex items-center justify-between w-full ${border} ${background}`;
