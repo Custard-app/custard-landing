@@ -12,7 +12,7 @@
 }
 
 .home{
-    margin: 0 3rem 0 0;
+    margin: 0 0 0 0;
 
 }
 
@@ -46,10 +46,16 @@ html{
     object-fit: contain;
     border-radius: 50px;
 }
-
+.content{
+    /* word-wrap: normal;  */
+    /* margin-right: 5px; */
+    text-align: center;
+    display: flex;
+    
+}
 .hero-h1{
     font-size: 7rem;
-   
+    /* word-wrap: normal;  */
     font-weight: bolder;
     line-height: 7.5rem;
 }
@@ -57,11 +63,13 @@ html{
 .star{
     margin-top: 20px;
     display: flex;
+    padding: 0 10px;
     justify-content: center;
 }
-.container{
+.sub-container{
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 .hero-btn{

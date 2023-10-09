@@ -1,18 +1,29 @@
+
 .texthead{
     margin-top: 6rem;
-    
+
+    color:#f5225f;
   font-size: 5rem;
 }
-@media(max-width:1224px){
+@media screen and (max-width:1224px){
     .texthead{
         margin: auto;
     }
     .texthead{
-        font-size: 2rem;
+        font-size: 4rem;
+        margin-top: 6rem;
+        text-align: center;
     }
     .marqueetext{
         display: flex;
         height: 90px;
         margin: 0rem 0 0rem 0;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+	.texthead{
+        font-size: 4rem;
+        /* margin-top: 6rem; */
+        text-align: center;
     }
 }

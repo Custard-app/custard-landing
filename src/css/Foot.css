@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal
 }
+.this-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* .footer-07::after {
     background: url("../assets/noise-8e00b22c382d9543764c4385f60050cf.webp") repeat;
     background-blend-mode: soft-light;
