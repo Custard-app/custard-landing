@@ -35,7 +35,7 @@ const Faq = () => {
   return (
     <>
       <div className="head">Frequently Asked Questions</div>
-      <section className="faq">
+      <div className="faq">
         <Accordion
           className="rounded-md overflow-hidden accordion"
         >
@@ -70,7 +70,7 @@ const Faq = () => {
         <div className="lap-img">
           <img src={d1} alt="" />
         </div>
-      </section>
+      </div>
     </>
   );
 };
