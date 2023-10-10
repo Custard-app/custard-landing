@@ -50,14 +50,22 @@ html {
 }
 
 .h1scroll{
+    
+    display: flex;
     margin: auto;
+    color: var(--accent);
+    font-size: 2rem;
+    font-weight: 200;
+    justify-content: center;
+    text-align: center;
+    /* margin: auto;
     color: var(--accent);
     font-size: 2rem;
     font-weight: 200;
     position: absolute;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
 }
 
 .scrollSection {
