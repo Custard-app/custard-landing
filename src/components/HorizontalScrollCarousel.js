@@ -20,7 +20,7 @@ function Image({ id }) {
 
   return (
     <>
-      <section className="scrollSection">
+      <div className="scrollSection">
         <div ref={ref} className="stick-image animate__animated ">
           <img
             className="scrollimg"
@@ -29,11 +29,11 @@ function Image({ id }) {
             alt=""
           />
         </div>
-        <div className="scrollContent animate__animated ">
+        <section className="scrollContent animate__animated ">
           <h2 className="h2scroll">{`${id.heading}`}</h2>
           <h1 className="h1scroll">{`${id.content}`}</h1>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 }
