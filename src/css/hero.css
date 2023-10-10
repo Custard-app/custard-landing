@@ -175,7 +175,13 @@ path {
     .etitle{
         font-size: 2rem;
     }
-    .econtent{
+    .sec-center{
+        display: flex;
+        justify-content: center;
+    }
+    section .econtent{
         font-size: 1.5rem;
+        justify-content: center;
+        
     }
 }

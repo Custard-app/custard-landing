@@ -29,10 +29,12 @@ function Image({ id }) {
             alt=""
           />
         </div>
-        <section className="scrollContent animate__animated ">
+        <div className="scrollContent animate__animated ">
+        <section>
           <h2 className="h2scroll">{`${id.heading}`}</h2>
           <h1 className="h1scroll">{`${id.content}`}</h1>
         </section>
+        </div>
       </div>
     </>
   );
