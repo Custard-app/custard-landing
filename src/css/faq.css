@@ -79,6 +79,7 @@
     position: relative;
 
 }
+
 .active::after{
     content: "";
     position: absolute;
