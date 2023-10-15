@@ -41,6 +41,7 @@
 
 section {
   scroll-snap-align: end;
+  overflow: hidden;
 }
 
   
@@ -54,7 +55,7 @@ section {
   /* height: 100vh; */
     transform: scale(1.2);
     
-    animation: zoom 1s linear;
+    /* animation: zoom 1s linear; */
     opacity: 0.9;
     /* margin: 50px 0; */
   }
