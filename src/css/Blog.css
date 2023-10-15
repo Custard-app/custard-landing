@@ -1,0 +1,23 @@
+.blog-space{
+    display: flex;
+}
+.container-blog{
+    display: flex;
+    margin: 4rem;
+    justify-content: center;
+    flex-direction: column;
+    border:4px red solid;
+    width: 60%;
+}
+
+.blog-img{
+    border-bottom: 2px red solid;
+}
+
+.btitle{
+    font-size: 6rem;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+}

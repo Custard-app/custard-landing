@@ -1,3 +1,21 @@
 Hero{
     margin: 10px;
 }
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body:after {
+    background: url("./assets/noise-8e00b22c382d9543764c4385f60050cf.webp") repeat;
+    background-blend-mode: soft-light;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 300%;
+    left: 0;
+    opacity: .1;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+}

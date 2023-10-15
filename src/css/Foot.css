@@ -1,3 +1,182 @@
-.text-white{
-    font-size:3rem;
+@font-face {
+    font-family: "Ionicons";
+    src: url("../fonts/ionicons.ttf?v=4.0.0-19") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+/* .footer-07::after {
+    background: url("../assets/noise-8e00b22c382d9543764c4385f60050cf.webp") repeat;
+    background-blend-mode: soft-light;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    background-position: center; 
+    opacity: .1;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.ftco-footer-social li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+.ftco-footer-social li a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    position: relative;
+}
+
+.ftco-footer-social li a span {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.ftco-footer-social li a:hover {
+    color: #fff;
+}
+
+.form-control {
+    height: 52px;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus,
+.form-control:active {
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    height: inherit !important;
+}
+
+.ftco-section {
+    padding: 12em 0;
+}
+
+.ftco-section h2 {
+    margin-bottom: 0;
+}
+
+footer {
+    padding: 3em 0;
+   
+}
+.menu span{
+    margin: 0 6px;
+    font-weight: bold;
+}
+
+.footer-07 {
+    background: #121212;
+   
+}
+
+.footer-07 a {
+    color: #a3de83;
+}
+
+.footer-07 p {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-07 .footer-heading {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.footer-07 .footer-heading .logo {
+    color: #fff;
+}
+
+.footer-07 .menu {
+    margin-bottom: 30px;
+}
+
+.footer-07 .menu a {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-07 .ftco-footer-social li a {
+    background: transparent;
+    border: 1px solid #a3de83;
+}
+
+.ion-logo-twitter:before,
+.ion-logo-instagram:before,
+.ion-logo-facebook:before
+ {
+    display: inline-block;
+    font-family: "Ionicons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.ion-logo-instagram:before {
+    content: "\f23e"
+}
+.ion-logo-twitter:before {
+    content: "\f2b0";
+}
+
+.ion-logo-facebook:before {
+    content: "\f236";
+}
+
+.foot-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:990px){
+    .logo{
+        display: flex;
+        position: relative;
+        transform: translateX(50%);
+        justify-content: center;
+    }
+    .footer-heading{
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -1,22 +1,25 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import HorizontalScrollCarousel from "./components/HorizontalScrollCarousel";
-import Foot from "./components/Foot";
+
+import Home from "./components/Home";
+
 import About from "./components/About";
-import FormAnimation from "./components/FormAnimation";
-import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Discover from "./components/Discover";
+import Feature from "./components/Feature";
+import Blog from "./components/Blog";
 
 function App() {
-
   return (
     <>
-      <Navbar />
-      <Hero />
-      <HorizontalScrollCarousel />
-      <FormAnimation />
-      <Foot />
-      <About />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/feature" element={<Feature />} />
+          <Route path="/discover" element={<Discover />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
